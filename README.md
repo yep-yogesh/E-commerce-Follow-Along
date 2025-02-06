@@ -152,4 +152,9 @@ In this milestone, we focused on implementing a secure and efficient login endpo
    - Ensured that sensitive user data, such as passwords, remains protected during authentication.  
    - Followed industry best practices to prevent common vulnerabilities, such as brute force attacks.  
 
-This milestone provides the foundation for user authentication, paving the way for implementing session management and token-based authentication in future milestones.  
+# Milestone- 8: the foundation for user authentication, paving the way for implementing session management and token-based authentication in future milestones.  
+
+Displays a list of products in a grid format.
+Uses a Product component to render individual product cards with an image, name, description, and price.
+The Home component maps over a predefined list of products and renders them using the Product component.
+Styled using Tailwind CSS for responsiveness and modern UI design.
