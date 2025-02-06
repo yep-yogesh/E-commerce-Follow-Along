@@ -2,8 +2,17 @@
 import { React, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import styles from "../styles/styles";
-
+import axios from "axios";
 const Login = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:8000/api/v2/user/login", { email, password });
+      console.log(response.data);
+    } catch (error) {
+      console.error("There was an error logging in!", error);
+    }
+  };
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
