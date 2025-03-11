@@ -26,8 +26,8 @@ router.post("/create-user", upload.single("file"), catchAsyncErrors(async (req, 
             }
         }
         return next(new ErrorHandler("User already exists", 400));
+        console.log("working")
     }
-
     let fileUrl = "";
     if (req.file) {
         fileUrl = path.join("uploads", req.file.filename);
