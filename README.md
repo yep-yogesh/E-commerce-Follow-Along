@@ -415,3 +415,24 @@ Google Maps API Integration: Allow users to select their address using a map.
  Ensured proper state management to handle form input.
  Provided user feedback (e.g., success message) upon successful address submission.
  
+ # Milestone 23: Implementing Order Placement and Address Selection
+ Learning Goals 🎯
+ By the end of this milestone, you will:
+ 
+ Add a "Place Order" button inside the cart page.
+ Create a Select Address Page where users can choose a delivery address.
+ Write a Mongoose schema to store order details in the database.
+ 1. Frontend Updates: Cart Page & Address Selection
+ Added a "Place Order" button inside the cart page.
+ When clicked, it navigates to the Select Address Page.
+ Displayed all saved addresses for the user.
+ Allowed users to select an address for order delivery.
+ 2. Backend Updates: Order Schema & Storage
+ Created a Mongoose schema to store order details, including:
+ User ID (to associate orders with users)
+ Product details (items in the cart)
+ Selected delivery address
+ Order status (pending, shipped, delivered)
+ Total price
+ Timestamp
+ Implemented an endpoint to store orders in the database.
